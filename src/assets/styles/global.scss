@@ -32,3 +32,15 @@ body {
 .d-flex {
   display: flex;
 }
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s all;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all;
+}

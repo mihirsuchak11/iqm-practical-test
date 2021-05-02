@@ -94,6 +94,9 @@ src
 |       └── Modal
 |           ├── Modal.tsx
 |           ├── Modal.scss
+|       └── ScrollTop
+|           ├── ScrollTop.tsx
+|           ├── ScrollTop.scss
 ├── pages
 |   └── Questions
 |       ├── Questions.tsx

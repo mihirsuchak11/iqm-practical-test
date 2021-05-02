@@ -7,7 +7,7 @@ import './Button.scss';
 
 interface ButtonProps {
   onClick: () => void;
-  btnText: string | ReactNode | any;
+  btnText?: string | ReactNode | any;
   className?: string;
   type?: string;
   icon?: IconDefinition;
@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, btnText, type, className, icon
   }
   return (
     <button className={`button${type ? ` ${type}` : ' primary'}${className ? ` ${className}` : ''}`} onClick={() => onClick()}>
-      {btnText} {icon && <FontAwesomeIcon icon={icon} />}
+      {btnText && btnText} {icon && <FontAwesomeIcon icon={icon} />}
     </button>
   );
 };
