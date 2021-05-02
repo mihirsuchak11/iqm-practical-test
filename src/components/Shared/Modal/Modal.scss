@@ -1,0 +1,69 @@
+@import '../../../assets/styles/helper/colors';
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.modal {
+  background-color: $white;
+  border-radius: 5px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &_header,
+  &_body,
+  &_footer {
+    padding: 16px;
+  }
+
+  &_header {
+    font-weight: 700;
+    color: $blue-zodiac;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid $white-smoke;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &_body {
+    position: relative;
+    flex: 1 1 auto;
+    max-height: calc(100vh - 210px);
+    overflow: auto;
+    color: $dim-grey;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid $white-smoke;
+
+    button {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}

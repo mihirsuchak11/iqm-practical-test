@@ -1,0 +1,68 @@
+@import '../../assets/styles/helper/colors';
+
+.not_found {
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  height: calc(100vh - 66px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__404 {
+    position: relative;
+    height: 240px;
+
+    h2 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 252px;
+      font-weight: 900;
+      margin: 0px;
+      color: $dim-grey;
+      text-transform: uppercase;
+      letter-spacing: -40px;
+      margin-left: -20px;
+      > span {
+        text-shadow: -8px 0px 0px white;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    color: $dim-grey;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .not-_found {
+    &__404 {
+      height: 200px;
+      h2 {
+        font-size: 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .not-found .not-found-404 {
+    height: 162px;
+    h2 {
+      font-size: 162px;
+      height: 150px;
+      line-height: 162px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

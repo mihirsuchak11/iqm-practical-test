@@ -1,0 +1,16 @@
+@import '../../../assets/styles/helper/colors';
+
+.chip {
+  padding: 5px 10px;
+  display: inline-flex;
+  background-color: $pattens-blue;
+  font-size: 12px;
+  color: $lochmara;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+}
